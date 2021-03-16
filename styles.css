@@ -30,4 +30,36 @@
     left: 0;
     top: 20px;
 }
+#menuwrapper {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 140px;
+    border: 3px solid rebeccapurple;
+}
+/*nav:hover {*/
+/*    transition: 0.5s ease-in-out;*/
+/*}*/
+#menuwrapper:hover #menu {
+    width: 0%;
+    /*opacity: 1;*/
+    transition: .1s ease-in-out;
+}
+
+#menuwrapper:hover #menu::before {
+    transform-origin: left center;
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+    /*opacity: 1;*/
+    transition: .5s ease-in-out;
+}
+#menuwrapper:hover #menu::after {
+    transform-origin: left center;
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+    /*opacity: 1;*/
+    transition: .5s ease-in-out;
+}
 
